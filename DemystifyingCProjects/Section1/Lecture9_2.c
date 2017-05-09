@@ -3,7 +3,7 @@
 int main()
 {
     float basic, gross, net;
-    const float conveyance = 0.25;
+    const float conveyance = 0.25;                  // excellent use of the modifier const
     const float medical = 0.27;
     const float tax = 0.17;
 
