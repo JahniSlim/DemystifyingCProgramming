@@ -17,3 +17,11 @@ int main()
 
     return 0;
 }
+
+/*
+    Attempt is good but you haven't reached the true objective. You are supposed to reverse the original number and not merely 
+    print the number in the reverse order. 
+    So if a particular varibale say x contains 653 and I print it, it would print 653. After you process it for reversing it, 
+    if I try to access the same variable x it should print 356. 
+    I hope you got it, what I mean.
+    */
