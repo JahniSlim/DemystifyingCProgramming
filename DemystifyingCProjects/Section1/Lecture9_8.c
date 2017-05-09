@@ -20,3 +20,6 @@ int main()
     return 0;
 }
 
+/*
+    Logic is good however if possible make it simple if possible. Give it a try. Hint: Avoid too many tens, and hundreds etc.
+*/
