@@ -9,7 +9,7 @@ int main()
 
     far = cel * 1.8 + 32;
 
-    printf("Fahrenheit = %.1f\n", far);
+    printf("Fahrenheit = %.1f\n", far);             // %f is format specifier for float
 
     return 0;
 }
