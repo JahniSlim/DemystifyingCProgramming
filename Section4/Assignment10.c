@@ -46,3 +46,31 @@ int main()
 
     return 0;
 }
+
+/*
+
+    Here is a compact code which I just wrote for you. 
+    
+    #include<stdio.h>
+    int main()
+    {
+	    int i, j;
+	
+	    for(i = 1; i<=500; i++)
+	    {
+		    j = 2;
+		    while(j <= i - 1)
+		    {
+			    if( i%j == 0)
+				    break;
+			    j++;
+		    }
+		    if(i==j)
+			    printf("%8d",j);
+	    }
+ 	    printf("\n");   
+
+        return 0;
+}
+
+*/
