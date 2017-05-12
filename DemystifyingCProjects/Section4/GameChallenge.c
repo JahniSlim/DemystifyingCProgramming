@@ -32,71 +32,50 @@ int main()
             if(matchsticks > 1)
                 printf("There are %d matchsticks left\n", matchsticks);
             else
-                printf("There is 1 matchstick left!\n");
+                printf("There is only 1 matchstick left!\n");
 
             for(i = matchsticks; i > 0; i--)
                 printf("| ");
 
             printf("\n");
+            printf("How many matchsticks would you like to pick up(1-4)? ");
+            scanf("%d", &pickup);
 
-            do{
-                printf("How many matchsticks would you like to pick up(1-4)? ");
-                scanf("%d", &pickup);
+            if(pickup < 1 || pickup > 4)
+            {
+                do{
+                    printf("Please choose a number between 1 - 4: ");
+                    scanf("%d", &pickup);
+                }while(pickup < 1 || pickup > 4);
+            }
 
-                while(pickup > matchsticks)
-                {
+            if(pickup > matchsticks)
+            {
+                do{
                     printf("There are only %d left!\n", matchsticks);
                     printf("How many matchsticks would you like to pick up? ");
                     scanf("%d", &pickup);
-                }
-            }while(pickup < 1 && pickup > 4);
+                }while(pickup > matchsticks);
+            }
 
             matchsticks -= pickup;
 
-            if(matchsticks == 0)
+            if(matchsticks > 0)
             {
                 printf("\n");
-                break;
-            }
-
-            printf("\n");
-
-            if(pickup == 1)
-            {
-                pickup = 4;
-                printf("Computer picks up %d\n", pickup);
-
-                matchsticks -= pickup;
-            }
-            else if(pickup == 2)
-            {
-                pickup = 3;
-                printf("Computer picks up %d\n", pickup);
-
-                matchsticks -= pickup;
-            }
-            else if(pickup == 3)
-            {
-                pickup = 2;
-                printf("Computer picks up %d\n", pickup);
-
-                matchsticks -= pickup;
-            }
-            else if(pickup == 4)
-            {
-                pickup = 1;
-                printf("Computer picks up %d\n", pickup);
-
+                pickup = 5 - pickup;
+                printf("Computer picks up %d\n\n", pickup);
                 matchsticks -= pickup;
             }
         }
 
-        printf("Nice try, but you lost!!\n\n");     //hardcoded loss since there is no way to win
+        printf("\nNice try, but you lost!!\n\n");     //hardcoded loss since there is no way to win
 
-        printf("Would you like to play again? ");
+        printf("Would you like to play again? (y/n) ");
         scanf(" %c,", &reload);
 
     }while(reload == 'y' || reload == 'Y');
 
     return 0;
 }
+
