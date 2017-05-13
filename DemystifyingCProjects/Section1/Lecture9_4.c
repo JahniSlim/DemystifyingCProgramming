@@ -1,31 +1,37 @@
+
+/*  ..\Section1\Lecture9_4.c
+    Marks obtained by student in 5 different subjects are input through the keyboard. Write a C program
+    to print total marks and percentile marks obtained by student. (Note: Assume that maximum marks obtained
+    by student in any subject are 100)
+
+    Last Modified: 5/12/17 John Olson
+*/
+
 #include<stdio.h>
 
 int main()
 {
-    int mark1, mark2, mark3, mark4, mark5, gpa;
+    float mark1, mark2, mark3, mark4, mark5;
+    float gpa;
 
     printf("Enter first grade (0-100): ");
-    scanf("%d", &mark1);
+    scanf("%f", &mark1);
 
     printf("Enter second grade (0-100): ");
-    scanf("%d", &mark2);
+    scanf("%f", &mark2);
 
     printf("Enter third grade (0-100): ");
-    scanf("%d", &mark3);
+    scanf("%f", &mark3);
 
     printf("Enter fourth grade (0-100): ");
-    scanf("%d", &mark4);
+    scanf("%f", &mark4);
 
     printf("Enter fifth grade (0-100): ");
-    scanf("%d", &mark5);
+    scanf("%f", &mark5);
 
-    gpa = (mark1 + mark2 + mark3 + mark4 + mark5) / 5;      
+    gpa = (mark1 + mark2 + mark3 + mark4 + mark5) / 5;
 
-    printf("Student's GPA: %d\n", gpa);
+    printf("Student's GPA: %.2f\n", gpa);
 
     return 0;
 }
-
-/*
-    Please check this program for variety kind of input. A few times you may get wrong output. Find the reason and correct it
-*/
