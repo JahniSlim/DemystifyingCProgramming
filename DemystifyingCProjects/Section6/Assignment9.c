@@ -44,8 +44,4 @@ int DecideIfLeap(int n)
     }
     else
         return 0;
-
-
-
-
 }
