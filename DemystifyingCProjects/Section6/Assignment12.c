@@ -7,7 +7,7 @@
 #include<stdio.h>
 int FindReverse(int);
 int Power(int exponent);
-int RomanNumeral(int, int);
+void RomanNumeral(int, int);
 
 int main()
 {
@@ -35,7 +35,7 @@ int main()
             ++i;
         }
 
-        n = RomanNumeral(roman, i);
+        RomanNumeral(roman, i);
     }
 }
 
@@ -72,7 +72,7 @@ int Power(int exponent)
     /*If the year is divisible by 10^n it catches its reverse single digit and returns it to its original state.
     It then forces the number of times to run the switch to decrement, while holding the correct switch/case
     flag. It's sort of hackish, I'm sure, but it works!*/
-int RomanNumeral(int n, int flag)
+void RomanNumeral(int n, int flag)
 {
     int digit, counter = flag;
     int powTen = 0;     //a 1 or zero flag to skip years that are divisible by 10, 100, 1000
@@ -185,7 +185,7 @@ int RomanNumeral(int n, int flag)
 
     printf("\n\n");
 
-    return n;
+    return;
 
 }
 
