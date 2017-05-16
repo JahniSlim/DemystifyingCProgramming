@@ -39,6 +39,8 @@ int main()
     }
 }
 
+
+    /*Reverses the order of an integer*/
 int FindReverse(int n)
 {
     int result = 0;
@@ -55,7 +57,8 @@ int FindReverse(int n)
 
 
 
-//Raises n * 10^exponent
+    /*Raises n * 10^exponent
+    I need this for multiples of 10, 100, 1000*/
 int Power(int exponent)
 {
     if (exponent != 0)
@@ -66,26 +69,27 @@ int Power(int exponent)
 
 
 
-    /*If the year entered in reverse is divisible by 10^n it catches it and returns it to its original state.
+    /*If the year is divisible by 10^n it catches its reverse single digit and returns it to its original state.
     It then forces the number of times to run the switch to decrement, while holding the correct switch/case
     flag. It's sort of hackish, I'm sure, but it works!*/
 int RomanNumeral(int n, int flag)
 {
     int digit, counter = flag;
+    int powTen = 0;     //a 1 or zero flag to skip years that are divisible by 10, 100, 1000
 
     if(n < 10)
+    {
         n *= Power(flag - 1);
+        powTen = 1;
+    }
 
     while (counter > 0)
     {
 
         digit = n % 10;
 
-        if (n % 10 == 0)
-        {
-            ++flag;
+        if (n % 10 == 0 && powTen == 1)
             --counter;
-        }
         else
         {
             switch(flag)
@@ -171,10 +175,12 @@ int RomanNumeral(int n, int flag)
                     break;
                 }
             }
+
+            --counter;
+            --flag;
         }
 
         n /= 10;
-        --flag;
     }
 
     printf("\n\n");
@@ -182,3 +188,4 @@ int RomanNumeral(int n, int flag)
     return n;
 
 }
+
