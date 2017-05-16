@@ -84,10 +84,9 @@ void RomanNumeral(int n, int flag)
 
     while (counter > 0)
     {
-
         digit = n % 10;
 
-        if (digit == 0 && powTen == 1)
+        if (n % 10 == 0 && powTen == 1)
             --counter;
         else
         {
