@@ -17,7 +17,6 @@ int main()
 
     while(1)
     {
-
         printf("Please enter a year below 4000(or 0 to exit): ");
         scanf("%d", &year);
 
@@ -88,7 +87,7 @@ void RomanNumeral(int n, int flag)
 
         digit = n % 10;
 
-        if (n % 10 == 0 && powTen == 1)
+        if (digit == 0 && powTen == 1)
             --counter;
         else
         {
