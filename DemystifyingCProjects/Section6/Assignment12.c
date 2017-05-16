@@ -86,7 +86,7 @@ void RomanNumeral(int n, int flag)
     {
         digit = n % 10;
 
-        if (n % 10 == 0 && powTen == 1)
+        if (digit == 0 && powTen == 1)
             --counter;
         else
         {
