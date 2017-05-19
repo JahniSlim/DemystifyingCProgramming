@@ -1,7 +1,7 @@
 /*  ..\Section8\Assignment5.c
     Write a C program to put even and odd numbers of an array in two different arrays.
 
-    Last Modified: 5/18/17 John Olson
+    Last Modified: 5/19/17 John Olson
 */
 
 #include<stdio.h>
