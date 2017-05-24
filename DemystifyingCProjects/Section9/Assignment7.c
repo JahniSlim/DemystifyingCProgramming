@@ -67,8 +67,8 @@ void EraseString(char *p)
 int SearchString(const char *w, const char *p)
 {
 
-char temp[WRD_LEN + 1] = " ", *t = temp;
-int count = 0;
+    char temp[WRD_LEN + 1] = " ", *t = temp;
+    int count = 0;
 
     for(; *p != '\0'; p++)
     {
