@@ -21,8 +21,8 @@ int main()
     int i;
 
     for(i = 0; i < WRD_LEN; i++)     //This snippet fills the smallest string with characters so that there is
-        smallest[i++] = ' ';    //something to compare a less than operator '<' to
-    smallest[i] = '\0';
+        smallest[i] = ' ';    //something to compare a less than operator '<' to
+    smallest[++i] = '\0';
 
 
     printf("This program finds the largest and smallest word in a phrase\n\n");
