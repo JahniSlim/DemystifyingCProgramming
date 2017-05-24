@@ -10,8 +10,6 @@
 #define STR_LEN 80
 #define WRD_LEN 20
 
-void AddEndSpace(char *);
-void EraseString(char *);
 int StringSearch(const char *, const char *);
 
 int main()
@@ -25,9 +23,7 @@ int main()
 
     printf("Please enter a phrase:\n");
     gets(phrase);
-
-    AddEndSpace(phrase);
-
+    
     printf("Please enter a word to search for:\n");
     gets(word);
 
@@ -43,50 +39,10 @@ int main()
 
 
 
-
-void AddEndSpace(char *s)
-{
-    int i = 0;
-
-    while(s[i] != '\0')
-    {
-        ++i;
-    }
-    s[i++] = ' ';
-    s[i] = '\0';
-}
-
-
-
-
-void EraseString(char *p)
-{
-    for(; *p != '\0'; p++)
-        *p = '\0';
-}
-
-
-
-
 int StringSearch(const char *w, const char *p)
 {
-    char temp[WRD_LEN + 1] = " ", *t = temp;
-
-    for(; *p != '\0'; p++)
-    {
-        *t++ = *p;
-
-        if(*p == ' ')
-        {
-            *(--t) = '\0';
-
-            if(strcmp(w, temp) == 0)
-                return 1;
-
-            EraseString(temp);
-            t = &temp[0];
-        }
-    }
-
+    if(strstr(p, w) != NULL)
+        return 1;
+    
     return 0;
 }
