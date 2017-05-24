@@ -68,10 +68,10 @@ int CheckPalindrome(const char *s)
     strcpy(s2, s1);
     strrev(s2);
 
-    while(*p1 != '\0')
-    {
-        if(*p1++ != *p2++)
-            return 0;
+    while(*p1 != '\0')          //I could use:      if(strcmp(s1, s2) == 0) 
+    {                           //                      return 1;
+        if(*p1++ != *p2++)      //But I really like using combined * and ++ operators!
+            return 0;           //Saves one more function call as well. Either way I'm glad it works
     }
 
     return 1;
