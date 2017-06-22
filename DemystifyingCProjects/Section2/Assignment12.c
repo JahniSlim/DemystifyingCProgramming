@@ -10,7 +10,7 @@ int main()
 {
     int time;
 
-    printf("Please enter a number of seconds(time): ");
+    printf("Please enter a number of seconds(time) and less than 86400: ");
     scanf("%d", &time);
 
     printf("\n%d:%d:%d\n", time / 3600, (time - time / 3600 * 3600) / 60, time % 60);
