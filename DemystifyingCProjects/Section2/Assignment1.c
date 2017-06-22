@@ -4,7 +4,7 @@
     Also print how much loss he has incurred or profit he has earned.              */
 
 #include <stdio.h>
-
+#include <stdlib.h>
 int main()
 {
     int cost, price, difference;
@@ -14,10 +14,7 @@ int main()
     printf("\nEnter price of item: $");
     scanf("%d", &price);
 
-    difference = price - cost;
-
-    if (difference < 0)
-        difference = difference * -1;
+    difference = abs(price - cost);                 // proper way to find the absolute difference
 
     if (price > cost)
         printf("The trader made a profit of $%d\n", difference);
