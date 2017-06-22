@@ -32,13 +32,13 @@ int main()
 
         switch(ch)
         {
-            case 'A' :
+            case 'A' : case 'a':
                 printf("The sum of %d and %d is %d\n\n", n1, n2, n1 + n2);
                 break;
-            case 'S' :
+            case 'S' : case 's':
                 printf("The difference of %d and %d is %d\n\n", n1, n2, n1 - n2);
                 break;
-            case 'M' :
+            case 'M' : case 'm': 
                 printf("The product of %d and %d is %d\n\n", n1, n2, n1 * n2);
                 break;
         }
