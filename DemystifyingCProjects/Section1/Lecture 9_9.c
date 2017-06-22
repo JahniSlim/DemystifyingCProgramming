@@ -15,12 +15,16 @@ int main()
 
     printf("Please enter a five digit number: ");
     scanf("%d", &num);
-
+    /* I am using just 10 for all division and modulus operator to get the desired result */                    
     d1 = num % 10;
-    d2 = num % 100 / 10;
-    d3 = num % 1000 / 100;
-    d4 = num % 10000 / 1000;
-    d5 = num % 100000  / 10000;
+    num = num/10;
+    d2 = num % 10;
+    num = num/10;
+    d3 = num % 10;
+    num = num/10;
+    d4 = num % 10;
+    num = num/10;
+    d5 = num % 10;
 
     num = d1 * 10000 + d2 * 1000 + d3 * 100 + d4 * 10 + d5;
 
