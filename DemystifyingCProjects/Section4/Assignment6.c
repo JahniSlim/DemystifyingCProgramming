@@ -11,7 +11,7 @@
 int main()
 {
     int num, i;
-    bool prime;
+    bool prime;                             // excellent use of bool data type
     char reload;
 
     printf("This program tells the user whether a number is prime or not\n\n");
