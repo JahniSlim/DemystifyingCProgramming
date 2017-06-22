@@ -12,7 +12,7 @@ int main()
     printf("Please enter an integer: ");
     scanf("%d", &num);
 
-    printf("\nThe number %d is %s.\n", num, num % 2 == 0 ? "even" : "odd");
+    printf("\nThe number %d is %s.\n", num, num % 2 ? "odd" : "even");
 
 
     return 0;
