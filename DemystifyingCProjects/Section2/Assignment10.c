@@ -1,6 +1,11 @@
 /*  Assignment10.c
+    
     Three integers are input through the keyboard. Write a C program to print largest
     among three numbers. (Use if-else control structure)
+    
+    For better understanding of nested if-else constructs I am expecting this prgoam to use only if-else and not use logical operators
+    
+    Can you modify the program?
 */
 
 #include<stdio.h>
