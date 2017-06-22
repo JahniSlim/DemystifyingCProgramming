@@ -7,16 +7,14 @@
 
 int main()
 {
-    int x, y, max;
+    int x, y;
 
     printf("Please enter an integer: ");
     scanf("%d", &x);
     printf("\nPlease enter a different integer: ");
     scanf("%d", &y);
 
-    max = (x > y ? x : y);
-
-    printf("\nThe larger number is %d\na", max);
+    printf("\nThe larger number is %d\na", x > y ? x : y);
 
 
     return 0;
