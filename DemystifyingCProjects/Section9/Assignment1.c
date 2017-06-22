@@ -7,7 +7,7 @@
 
 #include<stdio.h>
 #define STR_LEN 80
-void SwitchCase(char s[]);
+void ChangeCase(char s[]);
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     printf("Please enter a sentence:\n");
     gets(sentence);
 
-    SwitchCase(sentence);
+    ChangeCase(sentence);
 
     printf("%s", sentence);
 
@@ -27,7 +27,7 @@ int main()
 
 }
 
-void SwitchCase(char *s)
+void ChangeCase(char *s)
 {
     while(*s != '\0')
     {
