@@ -62,3 +62,32 @@ int main()
 
     return 0;
 }
+
+/*
+
+#include<stdio.h>
+int main()
+{
+	int armnum, temp;
+	int x, y, z;
+	
+	printf("Armstrong numbers between 1 and 500 are");
+	for(armnum = 1; armnum<=500; armnum++)
+	{
+		temp = armnum;
+		
+		x = armnum%10;
+		armnum = armnum / 10;
+		y = armnum % 10;
+		armnum = armnum / 10;
+		z = armnum % 10;
+		
+		armnum = temp;
+		
+		if(armnum == (x*x*x + y*y*y + z*z*z))
+			printf("%4d",armnum);
+	}
+	printf("\n\n");
+	return 0;	
+}
+*/
