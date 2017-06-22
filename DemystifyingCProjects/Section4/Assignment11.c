@@ -45,3 +45,38 @@ int main()
 
     return 0;
 }
+
+/*
+
+    I am providing a source code here, the way proram is expected to run 
+    
+    #include<stdio.h>
+int main()
+{
+	int marks;
+	int max;
+	char ch = 'y';
+	marks = max = 0;
+	
+	while(ch == 'y')
+	{
+		printf("Enter marks:\t");
+		scanf("%d",&marks);
+		
+		if((marks <= 0 || marks > 100))
+		{
+			printf("Invalid input\n");
+			continue;
+		}
+		else
+			if(marks>=max)
+				max = marks;		
+		printf("Do you wish to continue (y/n)\t");
+		scanf(" %c",&ch);		
+	}
+	
+	printf("Highest marks in the class %d\n",max);
+	
+	return 0;
+}
+*/
