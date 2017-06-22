@@ -21,13 +21,8 @@ int main()
         printf("Please enter an integer to see its factorial: ");
         scanf("%d", &num);
 
-        if(num == 0)
-            ;
-        else{
-            for(i = num; i > 0; i--)
-                fact *= i;
-            }
-
+        for(i = num; i > 0; i--)
+            fact *= i;
         printf("Factorial: %d\n\n", fact);
 
         printf("Would you like to reload the program? ");
