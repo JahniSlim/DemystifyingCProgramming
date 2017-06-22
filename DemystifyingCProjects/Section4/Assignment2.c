@@ -11,7 +11,7 @@
 int main()
 {
 
-    int num, response, total;
+    int num, response, total;           // I like varibale naming style by you. Very nice
     int i;
     char reload;
 
