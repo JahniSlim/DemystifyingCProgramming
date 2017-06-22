@@ -3,6 +3,8 @@
     and percentile marks for 3 students using any appropriate loop control structure.
 
     Last Modified: John Olson 5/3/17
+    
+    Ohh. You solved it using an array. I was not expecting this in a loops topic. But no problem though
 */
 
 #include<stdio.h>
