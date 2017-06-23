@@ -33,7 +33,7 @@ int FindOddEven()
     {
         printf("This number is even\n\n");
         return 1;
-    }
+    } 
     else if(n % 2 == 1)
     {
         printf("This number is odd\n\n");
