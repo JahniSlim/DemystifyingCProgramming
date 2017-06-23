@@ -7,7 +7,7 @@
 
 #include<stdio.h>
 double FindCircum(double r);        //Is this naming convention correct for function names?
-double FindArea(double r);          //Or is it findArea()?
+double FindArea(double r);          //Or is it findArea()? 
 const double pi = 3.1416;
 int main()
 {
