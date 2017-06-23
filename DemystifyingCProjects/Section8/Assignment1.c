@@ -30,7 +30,7 @@ int main()
                 return 0;
         }
 
-        for(i = 1; i <= 5; i++)
+        for(i = 1; i <= 5; i++)                     // I am doubtful about this loop construct. Have you checked the O/P?
         {
             if(num[i] > 0)
                 sum_pos += num[i];
