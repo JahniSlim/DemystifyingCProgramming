@@ -24,7 +24,7 @@ int main()
         scanf("%d", &num);
 
         arr[loc] = num;
-
+ 
         printf("%d\n\n", arr[loc]);
     }
 }
