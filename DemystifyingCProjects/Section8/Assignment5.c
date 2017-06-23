@@ -18,7 +18,7 @@ int main(void)
     {
         for(i = 0; i < N; i++)
         {
-            printf("Please enter a number (or -1 to exit): ");
+            printf("Please enter a number (or -1 to exit): ");          // Usually in such kind of loop programmer does not give any facility to exit midway
             scanf("%d", &list[i]);
 
             if(list[i] == -1)
