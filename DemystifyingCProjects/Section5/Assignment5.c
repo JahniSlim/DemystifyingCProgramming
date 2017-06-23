@@ -24,19 +24,8 @@ int main()
 
         switch(ch)
         {
-            case 'a' :
-                printf("%c is a vowel.\n\n", ch);
-                break;
-            case 'e' :
-                printf("%c is a vowel.\n\n", ch);
-                break;
-            case 'i' :
-                printf("%c is a vowel.\n\n", ch);
-                break;
-            case 'o' :
-                printf("%c is a vowel.\n\n", ch);
-                break;
-            case 'u' :
+            case 'a' : case 'A' : case 'e' : case 'E' : case 'i' : case 'I' :           
+            case 'o' : case 'O' : case 'u' : case 'U' : 
                 printf("%c is a vowel.\n\n", ch);
                 break;
             default :
