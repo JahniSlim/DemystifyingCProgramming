@@ -6,7 +6,7 @@
 */
 
 #include<stdio.h>
-#define N 6
+#define N 6                                                     // Define Macro which is meaningful like "size"
 void FindLargest(int a[], int *, int *);
 
 int main()
